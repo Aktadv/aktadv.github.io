@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - pkt247</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional styles */
+        body {
+            background: linear-gradient(to bottom right, silver, white);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+
+        .body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transform: rotate(45deg);
+            transition: opacity 0.5s ease;
+        }
+
+        .shine:hover:before {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="body bg-gray-50">
+    <header class="shine text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
+            <a href="#" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="ml-3 text-xl">Ashok Kumar Tiwari</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="./" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="./about.html" class="mr-5 hover:text-gray-900">About</a>
+                <a href="./books.html" class="mr-5 hover:text-gray-900">Books</a> 
+            </nav>
+        </div>
+    </header>
+    
+    <div>
+        <section id="about" class="shine bg-gray-100 text-gray-600 body-font py-8 min-">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center">
+                <div class="shine text-xlg w-full md:w-2/3 bg-white rounded-lg p-8 md:p-12">
+                    <h1 class="shine text-3xl mb-4 font-medium text-gray-900">About Ashok Kumar Tiwari</h1>
+                    <p class="mb-6">📚 Ashok Kumar Tiwari is an Indian author and advocate, renowned for his contributions to Bhojpuri and Hindi literature. His debut book, "Pahilika Deg," garnered critical acclaim and established him as a literary figure.</p>
+        
+                    <h2 class="shine text-2xl mb-4 font-medium text-gray-900">Social and Legal Advocate</h2>
+                    <p class="mb-6 ">⚖️ With over 17 years of experience in the legal field, Tiwari is well-regarded for his expertise in social and legal matters. He has handled more than 1000 cases, showcasing his legal acumen and dedication to justice. Tiwari practices law in the Bariya Court of Ballia district, where his extensive experience and competent representation have earned him respect.</p>
+        
+                    <h2 class="shine text-2xl mb-4 font-medium text-gray-900">Literary Contributions</h2>
+                    <p class="mb-6">📝 Tiwari's literary prowess extends beyond prose, with numerous songs published in "Pati" magazine. These songs delve into various societal issues and serve as a platform for social commentary. Tiwari's contributions to literature and law highlight his multifaceted talents and commitment to societal progress.</p>
+        
+                    <h2 class="shine text-2xl mb-4 font-medium text-gray-900">References</h2>
+                    <p class="mb-6">📰 Sources: "Pahilika Deg" publication, articles published in local newspapers, and official records of Tiwari's legal work.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <footer class="shine text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <div class="ml-auto">
+                <a href="https://pkt247.github.io" target="_blank" class="shine text-gray-500">
+                    <small class="shine ml-4">Copyright &copy; pkt247</small>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
